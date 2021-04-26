@@ -1,0 +1,1 @@
+// Verificar todos os vértices em apenas uma passada
