@@ -1,0 +1,3 @@
+[submodule "Simple-Graph"]
+	path = Simple-Graph
+	url = https://github.com/Trees-Over-The-Lake/Simple-Graph
