@@ -18,7 +18,7 @@ Graph teste01(Graph graph){
 }
 
 Graph teste02(Graph graph){
- graph.add_edge(0,3);
+    graph.add_edge(0,3);
     graph.add_edge(3,2);
     graph.add_edge(2,1);
     graph.add_edge(0,1);
@@ -37,10 +37,11 @@ int main(int argc, char **argv){
     graph.add_edge(1,3);
     
     graph.print();
-
+    clock_t tempo = clock();
     id n_cycles = graph.bfs(0);
-    
+    tempo = clock() - tempo;
     std::cout << "Número de ciclos: " << n_cycles << std::endl;
-    
+    std::cout << "Tempo total: " <<((double)tempo)/((CLOCKS_PER_SEC/1000)) << std::endl;
+
     return 0;
 }
