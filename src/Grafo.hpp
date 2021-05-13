@@ -11,7 +11,7 @@ typedef struct std::pair<int, int> parInteiros;
 // Grafo
 struct Grafo {
   int V, E;
-  std::vector<std::pair<char, parInteiros>> arestas;
+  std::vector<std::pair<int, parInteiros>> arestas;
 
   Grafo(int V, int E) {
     this->V = V;
@@ -19,8 +19,8 @@ struct Grafo {
   }
 
   // Adicionar novas arestas
-  void addAresta(char vertice, int aresta1, int aresta2) {
-    this->arestas.push_back({vertice, {aresta1, aresta2}});
+  void addAresta(int peso, int aresta1, int aresta2) {
+    this->arestas.push_back({peso, {aresta1, aresta2}});
   }
 
   // Algoritmo de Kruskal
@@ -73,7 +73,7 @@ void Grafo::kruskal() {
   DisjointSets ds(this->V);
 
   // Iterar através de todos os nós do grafo
-  std::vector<std::pair<char, parInteiros>>::iterator it;
+  std::vector<std::pair<int, parInteiros>>::iterator it;
   for (it = arestas.begin(); it != arestas.end(); it++) {
     int u = it->second.first;
     int v = it->second.second;
@@ -85,8 +85,8 @@ void Grafo::kruskal() {
     // mesmo set
     if (set_u != set_v) {
       // Escrever aresta final
-      std::cout << "Vértice: " << it->first << " \t| Arestas: " << u << " - "
-                << v << std::endl;
+      std::cout << "Pesos: " << it->first << " \t| Arestas: " << u << " - " << v
+                << std::endl;
       ds.unir(set_u, set_v);
     }
   }
