@@ -1,71 +1,30 @@
-#include <iostream>
-#include <vector>
+#include "../Grafo.hpp"
 
-#include "../../Simple-Graph/graph.hpp"
-
-Graph prim(Graph graph) {
-  Graph aux = graph;
-  aux.sort_graph();
-  Graph result = new Graph();
-
-  // Visited Vertex
-  std::vector<Vertex> visitedVertex;
-
-  for (auto i : aux.all_vertexes) {
-    Edge *menor = i->edges.front();
-    for (auto j : i->edges) {
-      if (j->get_value() < menor->get_value()) {
-        menor = j;
-      }
-    }
-
-    Vertex *vert = new Vertex(i->get_vertex_value());
-    Edge *insertEdge = new Edge(vert, i, menor->get_value(), false);
-    vert->add_edge(menor);
-
-    bool achou = false;
-    for (auto j : visitedVertex) {
-      if (j.get_vertex_value() == i->get_vertex_value()) achou = true;
-    }
-
-    if (!achou) {
-      visitedVertex.push_back(*vert);
-      result.insert_vertex(vert);
-    }
-  }
-
-  return result;
-}
-
+// Driver program to test above functions
 int main() {
-  Vertex *a = new Vertex(1);
-  Vertex *b = new Vertex(4);
-  Vertex *c = new Vertex(7);
-  Vertex *d = new Vertex(2);
+  /* Let us create above shown weighted
+     and unidrected graph */
+  int V = 9, E = 14;
+  Grafo g(V, E);
 
-  Edge *UnionA_B = new Edge(a, b, 12, true);
-  Edge *UnionA_C = new Edge(a, c, 47, false);
+  //  making above shown graph
+  g.addAresta('A', 1, 4);
+  g.addAresta('B', 2, 8);
+  g.addAresta('A', 7, 8);
+  g.addAresta('B', 7, 11);
+  g.addAresta('C', 3, 7);
+  g.addAresta('C', 8, 2);
+  g.addAresta('C', 5, 4);
+  g.addAresta('D', 4, 9);
+  g.addAresta('D', 5, 14);
+  g.addAresta('E', 5, 10);
+  g.addAresta('F', 6, 2);
+  g.addAresta('G', 7, 1);
+  g.addAresta('H', 8, 6);
+  g.addAresta('I', 8, 7);
 
-  Graph graph;
-  graph.insert_vertex(a);
-  graph.insert_vertex(b);
-  graph.insert_vertex(c);
-  graph.insert_vertex(d);
-
-  graph.insert_edge(UnionA_B);
-  graph.insert_edge(UnionA_C);
-
-  graph.print_all_vertexes();
-  graph.print_all_edges();
-  graph.print_all_graph();
-
-  std::cout << std::endl << "PRIM" << std::endl;
-
-  Graph primGraph = prim(graph);
-
-  primGraph.print_all_vertexes();
-  primGraph.print_all_edges();
-  primGraph.print_all_graph();
+  std::cout << "As arestas da MST são: " << std::endl;
+  g.kruskal();
 
   return 0;
 }
