@@ -6,7 +6,7 @@
 #include "Grafo.hpp"
 
 // Benchmark a fuction
-double benchmark(void (*input_function)(const Grafo& grafo)) {
+double benchmark(void (*input_function)(const Grafo&)) {
   clock_t start = clock();
   input_function(grafo);
   clock_t end = clock() - start;  // Get the time needed to run the function
