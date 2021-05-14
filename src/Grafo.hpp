@@ -21,7 +21,7 @@ struct Grafo {
   }
 
   // Algoritmo de Kruskal
-  void kruskal();
+  void static kruskal(const Grafo& obj);
 };
 
 #endif

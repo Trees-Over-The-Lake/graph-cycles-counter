@@ -1,4 +1,5 @@
 #include "../Grafo.hpp"
+#include "../Timer.hpp"
 
 // Disjoint Sets para usar no algoritmo de kruskal
 struct DisjointSets {
@@ -89,7 +90,7 @@ int main() {
   g.addAresta(3, 8, 7);
 
   std::cout << "As arestas da MST são: " << std::endl;
-  g.kruskal();
+  benchmark(g.kruskal);
 
   return 0;
 }
