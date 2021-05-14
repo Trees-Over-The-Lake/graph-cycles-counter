@@ -11,6 +11,7 @@ typedef struct std::pair<int, int> parInteiros;
 // Grafo
 struct Grafo {
   int V, E;
+  
   std::vector<std::pair<int, parInteiros>> arestas;
 
   Grafo(int V, int E) {
@@ -23,8 +24,14 @@ struct Grafo {
     this->arestas.push_back({peso, {aresta1, aresta2}});
   }
 
-  // Algoritmo de Kruskal
-  void kruskal();
+  int num_vertex();
+
+  int num_edge();
+
+  std::vector<std::pair<int, parInteiros>> get_arestas();
+
+  std::vector<int> get_vertex_adj(int vertex);
+  
 };
 
 // Disjoint Sets para usar no algoritmo de kruskal
@@ -66,30 +73,31 @@ struct DisjointSets {
   }
 };
 
-void Grafo::kruskal() {
-  // Ordenando o grafo para facilitar o trabalho futuro
-  std::sort(arestas.begin(), arestas.end());
+std::vector<std::pair<int, parInteiros>> Grafo::get_arestas() {
+  return this->arestas;
+}
 
-  DisjointSets ds(this->V);
+int Grafo::num_vertex() {
+  return this->V;
+}
 
-  // Iterar através de todos os nós do grafo
-  std::vector<std::pair<int, parInteiros>>::iterator it;
-  for (it = arestas.begin(); it != arestas.end(); it++) {
-    int u = it->second.first;
-    int v = it->second.second;
+int Grafo::num_edge() {
+  return this->E;
+}
 
-    int set_u = ds.procurar(u);
-    int set_v = ds.procurar(v);
+std::vector<int> Grafo::get_vertex_adj(int vertex) {
+  std::vector<int> result;
 
-    // Verificando se v e u são um ciclo, será se os dois estiveram dentro do
-    // mesmo set
-    if (set_u != set_v) {
-      // Escrever aresta final
-      std::cout << "Pesos: " << it->first << " \t| Arestas: " << u << " - " << v
-                << std::endl;
-      ds.unir(set_u, set_v);
+  for(auto arestas.begin(); i != arestas.end(); i++) {
+    if(i->second.first == vertex) {
+      result.push_back(i->second.second);
+    }
+    else if (i->second.second == vertex) {
+      result.push_back(i->second.first);
     }
   }
+
+  return result;
 }
 
 #endif

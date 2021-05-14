@@ -1,5 +1,5 @@
-#ifndef dfs_hpp
-#define dfs_hpp
+#ifndef bfs_hpp
+#define bfs_hpp
 
 /** COLORS
  *  WHITE: Not yet visited and neither is your neighborhood
@@ -12,7 +12,7 @@ enum COLORS {
     YELLOW,
 };
 
-#include "../../Simple-Graph/graph.cpp"
+#include "../Grafo.hpp"
 #include <stdint.h>
 
     class dfs
@@ -21,7 +21,7 @@ enum COLORS {
     private:
         /* data */
     public:
-        uint16_t DFS(Graph g,id start);
+        uint16_t DFS(Grafo g,int start);
     };
     
 
