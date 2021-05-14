@@ -8,9 +8,11 @@
 #include<algorithm>
 
 
-class kruskal {
+class Kruskal {
+    public: 
 
-static uint16_t kruskal(Grafo g);
+        uint16_t kruskal_cycle_detection(Grafo g);
+
 };
 
 

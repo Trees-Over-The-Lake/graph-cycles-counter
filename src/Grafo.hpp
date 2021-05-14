@@ -23,6 +23,10 @@ struct Grafo {
   void addAresta(int peso, int aresta1, int aresta2) {
     this->arestas.push_back({peso, {aresta1, aresta2}});
   }
+void addArestaSemPeso( int aresta1, int aresta2) {
+    this->arestas.push_back({0, {aresta1, aresta2}});
+  }
+
 
   int num_vertex();
 
@@ -33,6 +37,12 @@ struct Grafo {
   std::vector<int> get_vertex_adj(int vertex);
   
 };
+
+
+
+
+
+
 
 // Disjoint Sets para usar no algoritmo de kruskal
 struct DisjointSets {
@@ -88,7 +98,7 @@ int Grafo::num_edge() {
 std::vector<int> Grafo::get_vertex_adj(int vertex) {
   std::vector<int> result;
 
-  for(auto arestas.begin(); i != arestas.end(); i++) {
+  for(auto i = arestas.begin(); i != arestas.end(); i++) {
     if(i->second.first == vertex) {
       result.push_back(i->second.second);
     }
