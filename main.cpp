@@ -1,4 +1,5 @@
 #include "src/Caminhamento/kruskal.cpp"
+#include "src/Permutacao/bfs.cpp"
 
 Grafo carregarTeste01(Grafo g)
 {
@@ -23,29 +24,63 @@ Grafo carregarTeste01(Grafo g)
 Grafo carregarTeste02(Grafo g)
 {
   //  making above shown graph
+  g.addArestaSemPeso(0, 1);
+  g.addArestaSemPeso(0, 2);
+  g.addArestaSemPeso(0, 3);
   g.addArestaSemPeso(1, 2);
-  g.addArestaSemPeso(1, 3);
-  g.addArestaSemPeso(1, 4);
   g.addArestaSemPeso(2, 3);
-  g.addArestaSemPeso(3, 4);
 
   return g;
 }
+
+Grafo carregarTeste03(Grafo g)
+{
+  //  making above shown graph
+  g.addArestaSemPeso(0, 1);
+  g.addArestaSemPeso(0, 2);
+
+  g.addArestaSemPeso(2, 1);
+  g.addArestaSemPeso(2, 3);
+  g.addArestaSemPeso(2, 4);
+
+  g.addArestaSemPeso(5, 4);  
+  g.addArestaSemPeso(5, 6); 
+  g.addArestaSemPeso(5, 7); 
+  g.addArestaSemPeso(5, 8);
+
+  g.addArestaSemPeso(7, 9);
+  g.addArestaSemPeso(7, 8);  
+
+  
+  return g;
+}
+
+
+
+void runKruskal (){
+
+}
+
+
+
+
+
+
 
 // Driver program to test above functions
 int main(int argc, char *argv[])
 {
   /* Let us create above shown weighted
      and unidrected graph */
-  int V = 4, E = 4;
+  int V = 10, E = 11;
   Grafo g(V, E);
 
   g = carregarTeste02(g);
-  std::cout << "As arestas da MST são: " << std::endl;
+  //std::cout << "As arestas da MST são: " << std::endl;
 
-  Kruskal k;
+  BFS bfs;
 
-  auto result = k.kruskal_cycle_detection(g);
+  auto result = bfs.bfs_cycle_detection(g,0);
 
   std::cout << "Quantidade de ciclos: " << result << std::endl;
 

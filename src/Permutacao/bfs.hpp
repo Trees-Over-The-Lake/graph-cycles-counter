@@ -8,20 +8,20 @@
  */
 enum COLORS {
     WHITE,
-    RED,
     YELLOW,
+    RED,
 };
 
 #include "../Grafo.hpp"
 #include <stdint.h>
 
-    class dfs
+    class BFS
     
     {
     private:
         /* data */
     public:
-        uint16_t DFS(Grafo g,int start);
+        uint16_t bfs_cycle_detection(Grafo g,int start);
     };
     
 
