@@ -1,6 +1,39 @@
 #include "src/Caminhamento/kruskal.cpp"
 #include "src/Permutacao/bfs.cpp"
 
+Grafo carregarTeste00(Grafo g)
+{
+  //  making above shown graph
+  //  making above shown graph
+  g.addEdges(0, 4, 6);
+  g.addEdges(0, 14, 15);
+  g.addEdges(1, 5, 1);
+  g.addEdges(1, 2, 9);
+  g.addEdges(1, 4, 3);
+  g.addEdges(2, 5, 5);
+  g.addEdges(2, 6, 3);
+  g.addEdges(2, 3, 1);
+  g.addEdges(3, 10, 7);
+  g.addEdges(4, 5, 3);
+  g.addEdges(4, 8, 7);
+  g.addEdges(5, 8, 4);
+  g.addEdges(5, 6, 2);
+  g.addEdges(5, 9, 9);
+  g.addEdges(6, 10, 3);
+  g.addEdges(7, 8, 5);
+  g.addEdges(8, 9, 7);
+  g.addEdges(8, 12, 5);
+  g.addEdges(10, 13, 3);
+  g.addEdges(10, 17, 8);
+  g.addEdges(11, 15, 9);
+  g.addEdges(12, 16, 1);
+  g.addEdges(13, 17, 8);
+  g.addEdges(13, 16, 2);
+  g.addEdges(14, 15, 2);
+  g.addEdges(16, 15, 9);
+  return g;
+}
+
 Grafo carregarTeste01(Grafo g)
 {
   //  making above shown graph
@@ -43,29 +76,20 @@ Grafo carregarTeste03(Grafo g)
   g.addArestaSemPeso(2, 3);
   g.addArestaSemPeso(2, 4);
 
-  g.addArestaSemPeso(5, 4);  
-  g.addArestaSemPeso(5, 6); 
-  g.addArestaSemPeso(5, 7); 
+  g.addArestaSemPeso(5, 4);
+  g.addArestaSemPeso(5, 6);
+  g.addArestaSemPeso(5, 7);
   g.addArestaSemPeso(5, 8);
 
   g.addArestaSemPeso(7, 9);
-  g.addArestaSemPeso(7, 8);  
+  g.addArestaSemPeso(7, 8);
 
-  
   return g;
 }
 
-
-
-void runKruskal (){
-
+void runKruskal()
+{
 }
-
-
-
-
-
-
 
 // Driver program to test above functions
 int main(int argc, char *argv[])
@@ -75,12 +99,16 @@ int main(int argc, char *argv[])
   int V = 10, E = 11;
   Grafo g(V, E);
 
-  g = carregarTeste02(g);
+  g = carregarTeste00(g);
   //std::cout << "As arestas da MST são: " << std::endl;
 
   BFS bfs;
 
-  auto result = bfs.bfs_cycle_detection(g,0);
+  Kruskal kruskal;
+
+  //auto result = bfs.bfs_cycle_detection(g,0);
+
+  auto result = kruskal.kruskal_cycle_detection(g);
 
   std::cout << "Quantidade de ciclos: " << result << std::endl;
 
