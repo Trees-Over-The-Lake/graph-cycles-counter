@@ -1,5 +1,5 @@
-#ifndef dfs_hpp
-#define dfs_hpp
+#ifndef bfs_hpp
+#define bfs_hpp
 
 /** COLORS
  *  WHITE: Not yet visited and neither is your neighborhood
@@ -8,24 +8,24 @@
  */
 enum COLORS {
     WHITE,
-    RED,
     YELLOW,
+    RED,
 };
 
-#include "../../Simple-Graph/graph.cpp"
+#include "../Grafo.hpp"
 #include <stdint.h>
 
-    class dfs
+    class BFS
     
     {
-    private:
-        /* data */
+
     public:
-        uint16_t DFS(Graph g,id start);
+        uint16_t bfs_cycle_detection(Grafo g,int start);
+        
+        
     };
     
 
-    
-   
+
 
 #endif
