@@ -23,7 +23,7 @@ uint16_t BFS::bfs_cycle_detection(Grafo g, int start)
 
         if(colour.at(curr_vert) == WHITE) { 
 
-            std::cout << "curr_index = " << curr_vert << std::endl;
+         //   std::cout << "curr_index = " << curr_vert << std::endl;
 
             colour.at(curr_vert) = YELLOW;
 

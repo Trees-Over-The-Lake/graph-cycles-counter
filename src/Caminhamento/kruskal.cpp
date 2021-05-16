@@ -26,8 +26,7 @@ uint16_t Kruskal::kruskal_cycle_detection(Grafo g)
     if (set_u != set_v)
     {
       // Escrever aresta final
-      std::cout << "Pesos: " << it->first << " \t| Arestas: " << u << " - " << v
-                << std::endl;
+      //std::cout << "Pesos: " << it->first << " \t| Arestas: " << u << " - "  << std::endl;
       ds.unir(set_u, set_v);
     }
     else { 
