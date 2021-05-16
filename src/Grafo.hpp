@@ -5,15 +5,12 @@
 #include <iostream>
 #include <vector>
 
-// Criando uma estrutura de mapa para dois inteiros
-typedef struct std::pair<int, int> parInteiros;
-
 // Grafo
 struct Grafo
 {
   int V, E;
 
-  std::vector<std::pair<int, parInteiros>> arestas;
+  std::vector<std::pair<int, std::pair<int, int>>> arestas;
 
   Grafo(int V, int E)
   {
@@ -43,7 +40,7 @@ struct Grafo
 
   int num_edge();
 
-  std::vector<std::pair<int, parInteiros>> get_arestas();
+  std::vector<std::pair<int, std::pair<int, int>>> get_arestas();
 
   std::vector<int> get_vertex_adj(int vertex);
 };
@@ -94,7 +91,7 @@ struct DisjointSets
   }
 };
 
-std::vector<std::pair<int, parInteiros>> Grafo::get_arestas()
+std::vector<std::pair<int, std::pair<int, int>>> Grafo::get_arestas()
 {
   return this->arestas;
 }
@@ -128,5 +125,4 @@ std::vector<int> Grafo::get_vertex_adj(int vertex)
 
   return result;
 }
-
 #endif

@@ -1,5 +1,3 @@
-
-
 #include "kruskal.hpp"
 
 uint16_t Kruskal::kruskal_cycle_detection(Grafo g)
@@ -15,6 +13,7 @@ uint16_t Kruskal::kruskal_cycle_detection(Grafo g)
   // Iterar através de todos os nós do grafo
   for (auto it = arestas.begin(); it != arestas.end(); it++)
   {
+
     int u = it->second.first;
     int v = it->second.second;
 
@@ -36,4 +35,3 @@ uint16_t Kruskal::kruskal_cycle_detection(Grafo g)
 
   return n_of_cycles;
 }
-
