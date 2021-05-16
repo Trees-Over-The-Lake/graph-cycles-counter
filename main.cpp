@@ -1,7 +1,10 @@
 #include "src/Caminhamento/kruskal.cpp"
 #include "src/Permutacao/bfs.cpp"
+#include <limits>
 
 long NTESTE = 1000000;
+
+typedef std::numeric_limits<double> dbl;
 
 Grafo carregarTeste01()
 {
@@ -145,6 +148,8 @@ void benchmarkKruskal()
   Grafo graph(0, 0);
   Kruskal kruskal;
 
+  std::cout.precision(dbl::max_digits10);
+
   std::cout << std::endl;
   std::cout << std::endl;
   std::cout << "-----------------------------------------" << std::endl;
@@ -172,13 +177,15 @@ void benchmarkKruskal()
       min01 = end;
     }
   }
+
   //Mostrar resultados
   std::cout << "Rodada 01 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 14 e Arestas 12" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -209,10 +216,10 @@ void benchmarkKruskal()
   //Mostrar resultados
   std::cout << "Rodada 02 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 4 e Arestas 4" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -243,10 +250,10 @@ void benchmarkKruskal()
   //Mostrar resultados
   std::cout << "Rodada 03 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 10 e Arestas 11" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -277,10 +284,10 @@ void benchmarkKruskal()
   //Mostrar resultados
   std::cout << "Rodada 04 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 6 e Arestas 9" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -310,10 +317,10 @@ void benchmarkKruskal()
   //Mostrar resultados
   std::cout << "Rodada 05 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 10 e Arestas 15" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -343,10 +350,10 @@ void benchmarkKruskal()
   //Mostrar resultados
   std::cout << "Rodada 06 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 7 e Arestas 13" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 }
@@ -390,10 +397,10 @@ void benchmarkBFS()
   std::cout << "Rodada 01 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 14 e Arestas 12" << std::endl;
   std::cout << "Grafo com  " << NTESTE << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -424,10 +431,10 @@ void benchmarkBFS()
   //Mostrar resultados
   std::cout << "Rodada 02 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 4 e Arestas 4" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -458,10 +465,10 @@ void benchmarkBFS()
   //Mostrar resultados
   std::cout << "Rodada 03 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 10 e Arestas 11" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -493,10 +500,10 @@ void benchmarkBFS()
   std::cout << "Rodada 04 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 6 e Arestas 9" << std::endl;
 
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -526,10 +533,10 @@ void benchmarkBFS()
   //Mostrar resultados
   std::cout << "Rodada 05 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 10 e Arestas 15" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 
@@ -559,10 +566,10 @@ void benchmarkBFS()
   //Mostrar resultados
   std::cout << "Rodada 06 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 7 e Arestas 13" << std::endl;
-  std::cout << "Quantidade tempo total gasto nas operações: " << ((float)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade media de tempo gasto nas operações: " << ((float)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((float)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
-  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((float)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
 }
