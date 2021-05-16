@@ -1,5 +1,4 @@
-#ifndef KRUSKAL_CPP
-#define KRUSKAL_CPP
+
 
 #include "kruskal.hpp"
 
@@ -39,4 +38,3 @@ uint16_t Kruskal::kruskal_cycle_detection(Grafo g)
   return n_of_cycles;
 }
 
-#endif

@@ -1,6 +1,6 @@
 #ifndef GRAFO_HPP
 #define GRAFO_HPP
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 
 #include <iostream>
 #include <vector>
@@ -20,6 +20,7 @@ struct Grafo
     this->V = V;
     this->E = E;
   }
+
 
   // Adicionar novas arestas
   void addAresta(int peso, int aresta1, int aresta2)
@@ -107,6 +108,7 @@ int Grafo::num_edge()
 {
   return this->E;
 }
+
 
 std::vector<int> Grafo::get_vertex_adj(int vertex)
 {

@@ -18,14 +18,14 @@ enum COLORS {
     class BFS
     
     {
-    private:
-        /* data */
+
     public:
         uint16_t bfs_cycle_detection(Grafo g,int start);
+        
+        
     };
     
 
-    
-   
+
 
 #endif
