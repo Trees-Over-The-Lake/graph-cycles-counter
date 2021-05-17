@@ -1,0 +1,127 @@
+
+
+-----------------------------------------
+|          Benchmark Kruskal           |
+-----------------------------------------
+
+
+Rodada 01 de teste         | Número de testes 1000000
+Grafo com Vertices 14 e Arestas 12
+Quantidade tempo total gasto nas operações: 3404.9499999999998
+Quantidade media de tempo gasto nas operações: 0.0030000000000000001
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.13100000000000001
+
+
+Rodada 02 de teste         | Número de testes 1000000
+Grafo com Vertices 4 e Arestas 4
+Quantidade tempo total gasto nas operações: 1483.028
+Quantidade media de tempo gasto nas operações: 0.001
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.095000000000000001
+
+
+Rodada 03 de teste         | Número de testes 1000000
+Grafo com Vertices 10 e Arestas 11
+Quantidade tempo total gasto nas operações: 2897.6100000000001
+Quantidade media de tempo gasto nas operações: 0.002
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.017999999999999999
+
+
+Rodada 04 de teste         | Número de testes 1000000
+Grafo com Vertices 6 e Arestas 9
+Quantidade tempo total gasto nas operações: 2384.9839999999999
+Quantidade media de tempo gasto nas operações: 0.002
+Quantidade minima de tempo gasto nas operações: 0.001
+Quantidade Maximo de tempo gasto nas operações: 0.014999999999999999
+
+
+Rodada 05 de teste         | Número de testes 1000000
+Grafo com Vertices 10 e Arestas 15
+Quantidade tempo total gasto nas operações: 4200.7780000000002
+Quantidade media de tempo gasto nas operações: 0.0040000000000000001
+Quantidade minima de tempo gasto nas operações: 0.002
+Quantidade Maximo de tempo gasto nas operações: 0.02
+
+
+Rodada 06 de teste         | Número de testes 1000000
+Grafo com Vertices 7 e Arestas 13
+Quantidade tempo total gasto nas operações: 3893.8040000000001
+Quantidade media de tempo gasto nas operações: 0.0030000000000000001
+Quantidade minima de tempo gasto nas operações: 0.002
+Quantidade Maximo de tempo gasto nas operações: 0.02
+
+
+Rodada 07 de teste         | Número de testes 1000000
+Grafo com Vertices 5 e Arestas 8
+Quantidade tempo total gasto nas operações: 2295.9569999999999
+Quantidade media de tempo gasto nas operações: 0.002
+Quantidade minima de tempo gasto nas operações: 0.001
+Quantidade Maximo de tempo gasto nas operações: 0.017000000000000001
+
+
+
+
+-----------------------------------------
+|          Benchmark BFS                 |
+-----------------------------------------
+
+
+Rodada 01 de teste         | Número de testes 1000000
+Grafo com Vertices 14 e Arestas 12
+Grafo com  1000000
+Quantidade tempo total gasto nas operações: 1974.095
+Quantidade media de tempo gasto nas operações: 0.001
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.056000000000000001
+
+
+Rodada 02 de teste         | Número de testes 1000000
+Grafo com Vertices 4 e Arestas 4
+Quantidade tempo total gasto nas operações: 5431.5749999999998
+Quantidade media de tempo gasto nas operações: 0.0050000000000000001
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.069000000000000006
+
+
+Rodada 03 de teste         | Número de testes 1000000
+Grafo com Vertices 10 e Arestas 11
+Quantidade tempo total gasto nas operações: 11322.087
+Quantidade media de tempo gasto nas operações: 0.010999999999999999
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.072999999999999995
+
+
+Rodada 04 de teste         | Número de testes 1000000
+Grafo com Vertices 6 e Arestas 9
+Quantidade tempo total gasto nas operações: 9384.3199999999997
+Quantidade media de tempo gasto nas operações: 0.0089999999999999993
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.153
+
+
+Rodada 05 de teste         | Número de testes 1000000
+Grafo com Vertices 10 e Arestas 15
+Quantidade tempo total gasto nas operações: 15775.055
+Quantidade media de tempo gasto nas operações: 0.014999999999999999
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.106
+
+
+Rodada 06 de teste         | Número de testes 1000000
+Grafo com Vertices 7 e Arestas 13
+Quantidade tempo total gasto nas operações: 12437.793
+Quantidade media de tempo gasto nas operações: 0.012
+Quantidade minima de tempo gasto nas operações: 0.0080000000000000002
+Quantidade Maximo de tempo gasto nas operações: 0.071999999999999995
+
+
+Rodada 07 de teste         | Número de testes 1000000
+Grafo com Vertices 5 e Arestas 8
+Quantidade tempo total gasto nas operações: 8665.3819999999996
+Quantidade media de tempo gasto nas operações: 0.0080000000000000002
+Quantidade minima de tempo gasto nas operações: 0.0060000000000000001
+Quantidade Maximo de tempo gasto nas operações: 0.063
+
+

@@ -15,7 +15,6 @@ Grafo carregarTeste01()
 
   graph.addAresta(3, 7, 11);
   graph.addAresta(5, 3, 7);
-  graph.addAresta(7, 8, 2);
 
   graph.addAresta(9, 5, 4);
   graph.addAresta(10, 4, 9);
@@ -26,7 +25,7 @@ Grafo carregarTeste01()
   graph.addAresta(6, 7, 1);
 
   graph.addAresta(5, 8, 6);
-  graph.addAresta(3, 8, 7);
+
 
   return graph;
 }
@@ -136,6 +135,22 @@ Grafo carregarTeste06()
   graph.addAresta(30, 5, 7);
 
   graph.addAresta(6, 5, 7);
+
+  return graph;
+}
+
+Grafo carregarTeste07()
+{
+  Grafo graph(5, 8);
+
+  graph.addAresta(2, 1, 0);
+  graph.addAresta(3, 3, 0);
+  graph.addAresta(0, 0, 4);
+  graph.addAresta(1, 1, 4);
+  graph.addAresta(0, 3, 1);
+  graph.addAresta(1, 4, 3);
+  graph.addAresta(1, 2, 1);
+  graph.addAresta(1, 2, 3);
 
   return graph;
 }
@@ -356,6 +371,40 @@ void benchmarkKruskal()
   std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << std::endl;
   std::cout << std::endl;
+
+  // Nova rodada de teste
+  time01 = 0;
+  min01 = 1000000;
+  max01 = 0;
+
+  graph = carregarTeste07();
+  for (long i = 0; i < NTESTE; i++)
+  {
+
+    clock_t start = clock();
+    kruskal.kruskal_cycle_detection(graph);
+    clock_t end = clock() - start; // Get the time needed to run the function
+
+    time01 += end;
+    if (end > max01)
+    {
+      max01 = end;
+    }
+
+    if (end < min01)
+    {
+      min01 = end;
+    }
+  }
+  //Mostrar resultados
+  std::cout << "Rodada 07 de teste         | Número de testes " << NTESTE << std::endl;
+  std::cout << "Grafo com Vertices 5 e Arestas 8" << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
 }
 
 void benchmarkBFS()
@@ -566,6 +615,40 @@ void benchmarkBFS()
   //Mostrar resultados
   std::cout << "Rodada 06 de teste         | Número de testes " << NTESTE << std::endl;
   std::cout << "Grafo com Vertices 7 e Arestas 13" << std::endl;
+  std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << "Quantidade Maximo de tempo gasto nas operações: " << ((double)max01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+
+  // Nova rodada de teste
+  time01 = 0;
+  min01 = 1000000;
+  max01 = 0;
+
+  graph = carregarTeste07();
+  for (long i = 0; i < NTESTE; i++)
+  {
+
+    clock_t start = clock();
+    bfs.bfs_cycle_detection(graph, 0);
+    clock_t end = clock() - start; // Get the time needed to run the function
+
+    time01 += end;
+    if (end > max01)
+    {
+      max01 = end;
+    }
+
+    if (end < min01)
+    {
+      min01 = end;
+    }
+  }
+  //Mostrar resultados
+  std::cout << "Rodada 07 de teste         | Número de testes " << NTESTE << std::endl;
+  std::cout << "Grafo com Vertices 5 e Arestas 8" << std::endl;
   std::cout << "Quantidade tempo total gasto nas operações: " << ((double)time01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << "Quantidade media de tempo gasto nas operações: " << ((double)(time01 / NTESTE)) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
   std::cout << "Quantidade minima de tempo gasto nas operações: " << ((double)min01) / ((CLOCKS_PER_SEC / 1000)) << std::endl;
