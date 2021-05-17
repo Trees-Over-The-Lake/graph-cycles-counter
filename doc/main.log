@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.28)  16 MAY 2021 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.28)  16 MAY 2021 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,20 +602,20 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 142.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-) [2] [3] (/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.aux) ) 
+) [2] [3] [4] (/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.aux) ) 
 Here is how much of TeX's memory you used:
- 19881 strings out of 479383
- 380466 string characters out of 5875830
+ 19883 strings out of 479383
+ 380508 string characters out of 5875830
  856907 words of memory out of 5000000
- 36625 multiletter control sequences out of 15000+600000
+ 36627 multiletter control sequences out of 15000+600000
  424533 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,11n,85p,586b,1266s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.pdf" (3 pages, 90785 bytes).
+Output written on "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.pdf" (4 pages, 93473 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

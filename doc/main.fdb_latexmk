@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1621215207 "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.tex" "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.pdf" "main" 1621215208
-  "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.aux" 1621215208 1592 02666ac8626bd7d057d58f6f8f75a1f4 ""
-  "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.tex" 1621215205 8276 63da301a4e9db4cb18d87d409622a842 ""
+["pdflatex"] 1621216590 "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.tex" "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.pdf" "main" 1621216591
+  "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.aux" 1621216591 1998 5193052ddca39f261db8eff4924e6c74 ""
+  "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.tex" 1621216589 10187 c5eee46b5ef28585e7c91e06664b42e1 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1616952564 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1616952564 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1616952564 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -174,12 +174,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1616952564 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1619647505 4885835 225b430335ea75120e4d14f95280dfb9 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1619647484 2635857 3966e0ae0572d2373a9e3f89849c3cf7 ""
-  "main.aux" 1621215208 1592 02666ac8626bd7d057d58f6f8f75a1f4 "pdflatex"
-  "main.tex" 1621215205 8276 63da301a4e9db4cb18d87d409622a842 ""
+  "main.aux" 1621216591 1998 5193052ddca39f261db8eff4924e6c74 "pdflatex"
+  "main.tex" 1621216589 10187 c5eee46b5ef28585e7c91e06664b42e1 ""
   "sbc-template.sty" 1621207580 6464 e76e6bc62548ddb8fe05ddcefa61621e ""
   (generated)
   "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.pdf"
-  "main.aux"
-  "main.log"
   "/mnt/DEE4F617E4F5F19F/Formação/Faculdade/Ciência_da_computação/4º - Periodo/4_ALGORITMOS EM GRAFOS/Atividade/Atividade 02/graph-cycles-counter/doc/main.log"
+  "main.log"
+  "main.aux"
   "main.pdf"
