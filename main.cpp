@@ -145,7 +145,7 @@ Grafo carregarTeste07()
 
   graph.addAresta(2, 1, 0);
   graph.addAresta(3, 3, 0);
-  graph.addAresta(0, 0, 4);
+  graph.addAresta(1, 0, 4);
   graph.addAresta(1, 1, 4);
   graph.addAresta(0, 3, 1);
   graph.addAresta(1, 4, 3);
