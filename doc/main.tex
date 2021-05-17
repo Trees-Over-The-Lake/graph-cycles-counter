@@ -47,7 +47,7 @@
      
 \sloppy
 
-\title{Análise comparativa entre diferentes algoritmo de enumeração de ciclos em um grafo}
+\title{Análise comparativa entre dois algoritmos de enumeração de ciclos em um grafo}
 
 \author{Homenique Vieira Martins\inst{1}, Lucas Santiago de Oliveira\inst{2},}
 
@@ -93,8 +93,9 @@
      
     \section{Explicando o algoritmo BFS}
 
+    O algoritmo \emph{BFS} implementado foi pensado para se deslocar entre vértices adjacentes. No início todos os vértices são pintados de branco, o que representa que ainda esse vértice não foi visitado, tanto quanto seus vizinhos também não foram. A cor amarela representa nós já visitados, mas que seus vizinhos ainda não foram. Por último, temos os nós vermelhos que representam que tanto o nó foi visitado quanto todos os seus vizinhos. A ideia por trás dessas cores é deslocar um vértice apenas uma vez, como podem existir ciclos dentro do grafo, repetir um vértice poderia resultar em um \emph{loop infinito} - o algoritmo iria deslocar dentro desse ciclo para sempre -. A genialidade por trás dessas cores se dá no momento em que estamos em um nó, pintamos ele de amarelo e vamos deslocar para algum vizinho se encontrarmos um vizinho que anteriormente já tinha sido deslocado e seria o próximo a ser visitado, então encontramos um ciclo.
 
-     \section{Explicando a função de Benchmark} \label{sec:benckmark}
+    \section{Explicando a função de Benchmark} \label{sec:benckmark}
 
      \paragraph{} Para a execução do benchmark deve levar em consideração que existem outros processos 
      concorrente que disputar a disponibilidade do processador e por isso a execução de somente um teste pode
