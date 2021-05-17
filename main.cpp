@@ -134,7 +134,7 @@ Grafo carregarTeste06()
   graph.addAresta(2, 5, 6);
   graph.addAresta(30, 5, 7);
 
-  graph.addAresta(6, 5, 7);
+  graph.addAresta(5, 6, 7);
 
   return graph;
 }

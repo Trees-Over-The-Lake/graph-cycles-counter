@@ -7,15 +7,15 @@
 
 Rodada 01 de teste         | Número de testes 1000000
 Grafo com Vertices 14 e Arestas 12
-Quantidade tempo total gasto nas operações: 2896.4400000000001
-Quantidade media de tempo gasto nas operações: 0.002
+Quantidade tempo total gasto nas operações: 3332.509
+Quantidade media de tempo gasto nas operações: 0.0030000000000000001
 Quantidade minima de tempo gasto nas operações: 0
-Quantidade Maximo de tempo gasto nas operações: 0.059999999999999998
+Quantidade Maximo de tempo gasto nas operações: 0.025000000000000001
 
 
 Rodada 02 de teste         | Número de testes 1000000
 Grafo com Vertices 4 e Arestas 4
-Quantidade tempo total gasto nas operações: 1493.9960000000001
+Quantidade tempo total gasto nas operações: 1787.529
 Quantidade media de tempo gasto nas operações: 0.001
 Quantidade minima de tempo gasto nas operações: 0
 Quantidade Maximo de tempo gasto nas operações: 0.060999999999999999
@@ -23,42 +23,42 @@ Quantidade Maximo de tempo gasto nas operações: 0.060999999999999999
 
 Rodada 03 de teste         | Número de testes 1000000
 Grafo com Vertices 10 e Arestas 11
-Quantidade tempo total gasto nas operações: 2810.2869999999998
-Quantidade media de tempo gasto nas operações: 0.002
+Quantidade tempo total gasto nas operações: 3085.7710000000002
+Quantidade media de tempo gasto nas operações: 0.0030000000000000001
 Quantidade minima de tempo gasto nas operações: 0
-Quantidade Maximo de tempo gasto nas operações: 0.067000000000000004
+Quantidade Maximo de tempo gasto nas operações: 0.068000000000000005
 
 
 Rodada 04 de teste         | Número de testes 1000000
 Grafo com Vertices 6 e Arestas 9
-Quantidade tempo total gasto nas operações: 2395.328
+Quantidade tempo total gasto nas operações: 2693.0500000000002
 Quantidade media de tempo gasto nas operações: 0.002
 Quantidade minima de tempo gasto nas operações: 0
-Quantidade Maximo de tempo gasto nas operações: 0.058999999999999997
+Quantidade Maximo de tempo gasto nas operações: 0.048000000000000001
 
 
 Rodada 05 de teste         | Número de testes 1000000
 Grafo com Vertices 10 e Arestas 15
-Quantidade tempo total gasto nas operações: 4528.6180000000004
+Quantidade tempo total gasto nas operações: 4421.1120000000001
 Quantidade media de tempo gasto nas operações: 0.0040000000000000001
 Quantidade minima de tempo gasto nas operações: 0
-Quantidade Maximo de tempo gasto nas operações: 0.045999999999999999
+Quantidade Maximo de tempo gasto nas operações: 0.092999999999999999
 
 
 Rodada 06 de teste         | Número de testes 1000000
 Grafo com Vertices 7 e Arestas 13
-Quantidade tempo total gasto nas operações: 4433.2430000000004
-Quantidade media de tempo gasto nas operações: 0.0040000000000000001
-Quantidade minima de tempo gasto nas operações: 0.001
-Quantidade Maximo de tempo gasto nas operações: 0.13700000000000001
+Quantidade tempo total gasto nas operações: 3717.4560000000001
+Quantidade media de tempo gasto nas operações: 0.0030000000000000001
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.13800000000000001
 
 
 Rodada 07 de teste         | Número de testes 1000000
 Grafo com Vertices 5 e Arestas 8
-Quantidade tempo total gasto nas operações: 2522.0540000000001
+Quantidade tempo total gasto nas operações: 2393.1930000000002
 Quantidade media de tempo gasto nas operações: 0.002
 Quantidade minima de tempo gasto nas operações: 0
-Quantidade Maximo de tempo gasto nas operações: 0.13600000000000001
+Quantidade Maximo de tempo gasto nas operações: 0.090999999999999998
 
 
 
@@ -71,57 +71,57 @@ Quantidade Maximo de tempo gasto nas operações: 0.13600000000000001
 Rodada 01 de teste         | Número de testes 1000000
 Grafo com Vertices 14 e Arestas 12
 Grafo com  1000000
-Quantidade tempo total gasto nas operações: 1935.2860000000001
+Quantidade tempo total gasto nas operações: 1868.634
 Quantidade media de tempo gasto nas operações: 0.001
-Quantidade minima de tempo gasto nas operações: 0
-Quantidade Maximo de tempo gasto nas operações: 0.057000000000000002
-
-
-Rodada 02 de teste         | Número de testes 1000000
-Grafo com Vertices 4 e Arestas 4
-Quantidade tempo total gasto nas operações: 5453.6679999999997
-Quantidade media de tempo gasto nas operações: 0.0050000000000000001
 Quantidade minima de tempo gasto nas operações: 0
 Quantidade Maximo de tempo gasto nas operações: 0.090999999999999998
 
 
+Rodada 02 de teste         | Número de testes 1000000
+Grafo com Vertices 4 e Arestas 4
+Quantidade tempo total gasto nas operações: 5715.0010000000002
+Quantidade media de tempo gasto nas operações: 0.0050000000000000001
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.14000000000000001
+
+
 Rodada 03 de teste         | Número de testes 1000000
 Grafo com Vertices 10 e Arestas 11
-Quantidade tempo total gasto nas operações: 11416.058999999999
+Quantidade tempo total gasto nas operações: 11499.726000000001
 Quantidade media de tempo gasto nas operações: 0.010999999999999999
-Quantidade minima de tempo gasto nas operações: 0.01
-Quantidade Maximo de tempo gasto nas operações: 0.067000000000000004
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.107
 
 
 Rodada 04 de teste         | Número de testes 1000000
 Grafo com Vertices 6 e Arestas 9
-Quantidade tempo total gasto nas operações: 8563.2729999999992
+Quantidade tempo total gasto nas operações: 8956.9879999999994
 Quantidade media de tempo gasto nas operações: 0.0080000000000000002
-Quantidade minima de tempo gasto nas operações: 0.0030000000000000001
-Quantidade Maximo de tempo gasto nas operações: 0.062
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.068000000000000005
 
 
 Rodada 05 de teste         | Número de testes 1000000
 Grafo com Vertices 10 e Arestas 15
-Quantidade tempo total gasto nas operações: 15362.063
-Quantidade media de tempo gasto nas operações: 0.014999999999999999
-Quantidade minima de tempo gasto nas operações: 0
-Quantidade Maximo de tempo gasto nas operações: 0.121
+Quantidade tempo total gasto nas operações: 16244.504999999999
+Quantidade media de tempo gasto nas operações: 0.016
+Quantidade minima de tempo gasto nas operações: 0.001
+Quantidade Maximo de tempo gasto nas operações: 0.11600000000000001
 
 
 Rodada 06 de teste         | Número de testes 1000000
 Grafo com Vertices 7 e Arestas 13
-Quantidade tempo total gasto nas operações: 12126.275
+Quantidade tempo total gasto nas operações: 12823.205
 Quantidade media de tempo gasto nas operações: 0.012
-Quantidade minima de tempo gasto nas operações: 0.0089999999999999993
-Quantidade Maximo de tempo gasto nas operações: 0.10000000000000001
+Quantidade minima de tempo gasto nas operações: 0.01
+Quantidade Maximo de tempo gasto nas operações: 0.045999999999999999
 
 
 Rodada 07 de teste         | Número de testes 1000000
 Grafo com Vertices 5 e Arestas 8
-Quantidade tempo total gasto nas operações: 7646.7439999999997
-Quantidade media de tempo gasto nas operações: 0.0070000000000000001
-Quantidade minima de tempo gasto nas operações: 0.0050000000000000001
-Quantidade Maximo de tempo gasto nas operações: 0.094
+Quantidade tempo total gasto nas operações: 8268.2139999999999
+Quantidade media de tempo gasto nas operações: 0.0080000000000000002
+Quantidade minima de tempo gasto nas operações: 0
+Quantidade Maximo de tempo gasto nas operações: 0.067000000000000004
 
 
