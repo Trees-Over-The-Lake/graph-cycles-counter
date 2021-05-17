@@ -91,16 +91,18 @@
          elemento está em ambas e se estiver, não conectar no grafo final. Resultado em uma MST, 
          a partir de um algoritmo simples.
      
+    \section{Explicando o algoritmo BFS}
+
 
      \section{Explicando a função de Benchmark} \label{sec:benckmark}
 
-     Para a execução do benchmark deve levar em consideração que existem outros processos 
+     \paragraph{} Para a execução do benchmark deve levar em consideração que existem outros processos 
      concorrente que disputar a disponibilidade do processador e por isso a execução de somente um teste pode
-      não trazer o custo real de uma operação, pois por um azar a trend que que ficou responsável por rodar o 
-      programa já estava ocupada com outro processo e desta forma impactaria negativamente no resultado,para
+      não trazer o custo real de uma operação, pois por um azar a thread que que ficou responsável por rodar o 
+      programa já estava ocupada com outro processo e desta forma impactaria negativamente no resultado, para
        mitigar esse problema definido que seria executado $10^5$ de um mesmo algoritmo  com uma configuração de 
        grafo, todo esse tempo e somando a uma variável e após isso é feito uma média do tempo de execução. 
-       O que traria um resultado mais preciso do tempo médio de execução,também para um comparativo de dados 
+       O que traria um resultado mais preciso do tempo médio de execução, também para um comparativo de dados 
        peguei o maior e menor tempo de execução de um algoritmo em cima de um grafo. 
         
        \section{Apresentação dos valores} \label{sec:resultados}
@@ -154,7 +156,7 @@
         \hline
         Media de tempo& 0.002 & 0.001 \\
         \hline
-        Tempo minimo& 0000 & 0000 \\
+        Tempo minimo& 0* & 0* \\
         \hline
         Tempo Máximo& 0.0599 & 0.0570 \\
         \hline
@@ -202,7 +204,7 @@
       \hline
       Media de tempo& 0.002 & 0.007 \\
       \hline
-      Tempo minimo& 0000 & 0.005 \\
+      Tempo minimo& 0* & 0.005 \\
       \hline
       Tempo Máximo&  0.136 & 0.0940 \\
       \hline
@@ -260,7 +262,7 @@
       \hline
       Media de tempo& 0.003 & 0.012 \\
       \hline
-      Tempo minimo& 0000 & 0.010 \\
+      Tempo minimo& 0* & 0.010 \\
       \hline
       Tempo Máximo&  0.1380 & 0.0459 \\
       \hline
@@ -271,6 +273,14 @@
   \end{table}
   \newpage
 
+  \paragraph{} \emph{Valores que possuem * tiveram resultados imprecisos. Todos resultaram em um número
+  pequeno demais para entrar na contabilização. Valor inferior a 0.000000.}
+
+  \section{Conclusão}
+
+  \paragraph{} Entre os dois algoritmos exibidos, o algoritmo Kruskal teve um desempenho significativamente superior ao \emph{BFS} chegando em alguns testes a ter 4 vezes o desempenho do seu concorrente. As versões originais possuem um comportamento oposto ao que obtivemos. Uma forma disso ocorrer é a escolha da implementação não ter sido bem otimizada para os testes realizados. Além de haver pequenas diferenças nos modelos originais e no modelo em que projetamos. Considerando que nossos projetos não foram focados em otimização e, sim, simplicidade de leitura e entendimento desses algoritmos. 
+
+Depois de vários testes serem realizados, os resultados obtidos foram demonstrados nos gráficos acima. Em alguns casos, ambos os algoritmos resolveram o problema tão rapidamente que não foi possível medir o desempenho deles. Em outros casos Kruskal se mostrou significativamente mais eficiente, perdendo em apenas um dos testes. Dos testes que foram realizados, Kruskal obteve um tempo quase quatro vezes menor para ser executado do que o algoritmo \emph{BFS}.
 
 
 \end{document}
